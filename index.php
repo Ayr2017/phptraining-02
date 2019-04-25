@@ -1,6 +1,8 @@
 <?php
 
-$arr = ['id'=>1, 'title'=>'Обувь',
+$arr = [
+
+['id'=>1, 'title'=>'Обувь',
     'children' => [
         ['id'=>2, 'title'=>'Ботинки',
         'children' => [
@@ -15,7 +17,15 @@ $arr = ['id'=>1, 'title'=>'Обувь',
         ]
     ]
     ]
-];
+        ],
+        ["id" => 8,
+        "title" =>  "Спорт",
+        'children' =>[
+        'id' => 9,
+            'title' => 'Мячи']
+        ]
+
+        ];
 
 
 
@@ -42,7 +52,7 @@ function open($arr, $id)
 }
 
 echo "<pre>";
-open($arr,3);
+open($arr,9);
 echo "</pre>";
 echo "<br>____________";
 
